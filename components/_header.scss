@@ -1,0 +1,47 @@
+.header{
+    padding: 5rem 0;
+    background-color: $clr-dark;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-between;
+    }
+    .branding{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            color: $clr-light;
+        }
+        img{
+            width: 5rem;
+        }
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+    
+    &__options{
+        ul{
+            display: flex;
+            gap: 2rem;
+            li{
+                a{
+                    color: $clr-h-gray;
+                }
+            }
+        }
+    }
+
+    .header.container{
+    width: 100%;
+    max-width: 300rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    }
+
+}
