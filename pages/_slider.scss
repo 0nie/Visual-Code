@@ -1,0 +1,79 @@
+.tns-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.tns-controls button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.tns-controls button:hover {
+  color: black;
+}
+
+.tns-controls button {
+  background: none;
+  border: 1px solid $clr-b-blue;
+  padding: 1rem;
+  border-radius: 100%;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: $clr-b-blue !important;
+}
+
+.tns-controls button:hover {
+  color: $clr-f-dark !important;
+  border-color: $clr-f-dark !important ;
+}
+
+.slider {
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+  position: relative; /* ✅ Fix for arrows positioning */
+  height: 100%;
+  padding: 15rem 0;
+  z-index: 1;
+}
+
+.tns-nav {
+  text-align: center;
+  margin-top: 15px; /* Adjust spacing */
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+}
+
+.tns-nav button {
+  width: 20px; /* Make dots bigger */
+  height: 20px;
+  margin: 5px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.tns-nav .tns-nav-active {
+  background: $clr-b-blue; /* Keep active dot blue */
+  transform: scale(1.2); /* Slightly enlarge active dot */
+  border: 1px solid $transparent;
+}
+
+#tns1 > .tns-item {
+  margin-left: 5rem;
+}
+
+#tns1 > .tns-item {
+  font-size: 1.7rem;
+}

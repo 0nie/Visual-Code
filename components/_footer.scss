@@ -1,0 +1,50 @@
+.footer{
+    padding: 7rem 0;
+    background-color: $clr-grayish;
+    span{
+        color: $clr-b-blue;
+        cursor: pointer;
+    }
+
+    &__top{
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 39rem;
+        p{
+            font-size: 1.8rem;
+        }
+
+    }
+
+    .footer__info{
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        h2{
+            line-height: 1.4;
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 13rem;
+    }
+
+    .footer__bottom{
+        text-align: center;
+        line-height: 2.5;
+        font-size: 1.4rem;
+        
+        h3{
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+    }
+}
+

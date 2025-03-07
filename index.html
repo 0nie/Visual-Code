@@ -1,55 +1,605 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Studio Clone</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+  </head>
 
-    <head>
+  <body>
+    <header class="header">
+      <div class="header container">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <div class="branding">
+              <img src="img/apple-touch-icon.png" alt="logo" />
+              <p>Visual Studio Code</p>
+            </div>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Visual Studio Clone</title>
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="shortcut icon" href="img/apple-touch-icon.png" type="image/x-icon">
-        <style>@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+            <div class="header__options">
+              <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Updates</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Extensions</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Learn</a></li>
+              </ul>
+            </div>
+          </div>
 
-    </head>
+          <div class="search__dloads">
+            <form action="#">
+              <input type="search" placeholder="Search Docs" />
+              <button type="button">
+                <span><i class="fa-solid fa-download"></i></span>Download
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
 
-    <body>
-        <header class="header">
-            <div class="header container">
+      <div class="updates">
+        <p>
+          <span>Version 1.74</span> is now available! Read about the new feature
+          and fixes from November.
+        </p>
+      </div>
+    </header>
 
+    <section class="banner">
+      <div class="banner__container">
+        <div class="banner__wrapper">
+          <div class="banner__info">
+            <h1><span>Code Editing. </span>Redifined.</h1>
 
-                <div class="header__wrapper">
+            <div class="banner__info__add">
+              <p>Free. Built on open source. Runs everywhere.</p>
 
-                    <div class="header__left">
-                        <div class="branding">
-                            <img src="img/apple-touch-icon.png" alt="logo">
-                            <p>Visual Studio Code</p>
-                        </div>
+              <div class="button__container">
+                <button>
+                  <a href="#"
+                    >Download for Windows <br />
+                    <small>Stable Build</small></a
+                  >
+                </button>
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </div>
 
-                        <div class="header__options">
-                            <ul>
-                                <li><a href="#">Docs</a></li>
-                                <li><a href="#">Updates</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">API</a></li>
-                                <li><a href="#">Extensions</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Learn</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
+              <div class="colored__container">
+                <p>
+                  <span>Web</span> , <span>Insider edition</span> , or
+                  <span>other platforms</span>
+                </p>
+                <p></p>
+              </div>
+            </div>
 
-                    <div class="search__dloads">
-                        <form action="#">
-                            <input type="search" placeholder="Search Docs">
-                            <button>Download</button>
-                        </form>
-                    </div>
+            <div class="agreement__container">
+              <p>
+                By using VS Code, you agree to its <br />
+                <span>license and privacy statement.</span>
+              </p>
+            </div>
+          </div>
+
+          <img src="./img/home-screenshot-win.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="icon">
+      <div class="container__icon">
+        <div class="icon__wrapper">
+          <div class="icon__card icon__card-1">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p>IntelliSense</p>
+          </div>
+
+          <div class="icon__card icon__card-2">
+            <i class="fa-solid fa-play"></i>
+            <p>Rund and Debug</p>
+          </div>
+
+          <div class="icon__card icon__card-3">
+            <i class="fa-solid fa-code-branch"></i>
+            <p>Built-in Git</p>
+          </div>
+
+          <div class="icon__card icon__card-4">
+            <i class="fa-solid fa-cubes"></i>
+            <p>Extension</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <img src="./img/cassidoo.jpg" alt="" />
+
+          <div class="slider__item__content">
+            <h3>Cassidy William</h3>
+            <p>@cassidoo</p>
+            <p>
+              VS <span>@code</span> does so many things right. I'm <br />
+              constantly impressed by the UX. and <br />
+              customizing workspace / user preferences <br />
+              is so exception. 🙌💯 It just keeps getting <br />
+              better ❤️
+            </p>
+          </div>
+
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+      </div>
+    </section> -->
+
+    <section class="slider">
+      <div class="slider__wrapper my-slider">
+        <div class="slider__item">
+          <img src="./img/cassidoo.jpg" alt="" />
+          <div class="slider__item__content">
+                <h3>Cassidy William</h3>
+                <p>@cassidoo</p>
+                <p>
+                VS <span>@code</span> does so many things right. I'm <br />
+                constantly impressed by the UX. and <br>Customizing
+                workspace/user preferences <br> is so exceptional. 🙌💯 
+                It just keeps getting <br>better ❤️
+                </p>
+          </div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/cassidoo.jpg" alt="" />
+          <div class="slider__item__content">
+            <h3>Cassidy William</h3>
+            <p>@cassidoo</p>
+            <p>
+              VS <span>@code</span> does so many things right. I'm <br />
+              constantly impressed by the UX. Customizing <br />
+              workspace/user preferences is so exceptional. 🙌💯 <br />
+              It just keeps getting better ❤️
+            </p>
+          </div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/cassidoo.jpg" alt="" />
+          <div class="slider__item__content">
+            <h3>Cassidy William</h3>
+            <p>@cassidoo</p>
+            <p>
+              VS <span>@code</span> does so many things right. I'm <br />
+              constantly impressed by the UX. Customizing <br />
+              workspace/user preferences is so exceptional. 🙌💯 <br />
+              It just keeps getting better ❤️
+            </p>
+          </div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/cassidoo.jpg" alt="" />
+          <div class="slider__item__content">
+            <h3>Cassidy William</h3>
+            <p>@cassidoo</p>
+            <p>
+              VS <span>@code</span> does so many things right. I'm <br />
+              constantly impressed by the UX. Customizing <br />
+              workspace/user preferences is so exceptional. 🙌💯 <br />
+              It just keeps getting better ❤️
+            </p>
+          </div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/cassidoo.jpg" alt="" />
+          <div class="slider__item__content">
+            <h3>Cassidy William</h3>
+            <p>@cassidoo</p>
+            <p>
+              VS <span>@code</span> does so many things right. I'm <br />
+              constantly impressed by the UX. Customizing <br />
+              workspace/user preferences is so exceptional. 🙌💯 <br />
+              It just keeps getting better ❤️
+            </p>
+          </div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/cassidoo.jpg" alt="" />
+          <div class="slider__item__content">
+            <h3>Cassidy William</h3>
+            <p>@cassidoo</p>
+            <p>
+              VS <span>@code</span> does so many things right. I'm <br />
+              constantly impressed by the UX. Customizing <br />
+              workspace/user preferences is so exceptional. 🙌💯 <br />
+              It just keeps getting better ❤️
+            </p>
+          </div>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__wrapper">
+        <div class="services__card">
+          <div class="services__card__item">
+            <img src="img/home-intellisense.svg" alt="" />
+            <div class="item__info">
+              <p class="head">Meet Intellisense</p>
+              <p>
+                Go beyond syntax highlighting and autocomplete with <br />
+                IntelliSense, which provides smart completions based on variable
+                <br />
+                types, function definitions, and imported modules.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="services__card services__card__dark">
+          <div class="services__card__item">
+            <div class="item__info">
+              <p class="head">
+                Print statement debugging is a thing of the past.
+              </p>
+              <p>
+                Debug code right from the editor. Launch or attach to your
+                running <br />
+                apps and debug with break points, call stacks, and an
+                interactive <br />
+                console.
+              </p>
+            </div>
+
+            <img src="img/home-debug.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="services__card">
+          <div class="services__card__item">
+            <img src="img/home-git.svg" alt="" />
+            <div class="item__info">
+              <p class="head">Git commands built-in.</p>
+              <p>
+                Working with Git and other SCM providers has never benn easier.
+                <br />
+                Review diffs, stage files, and make commits right from the
+                editor. <br />
+                Push and Pull from any hosted SCM service.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="services__card services__card__dark">
+          <div class="services__card__item">
+            <div class="item__info">
+              <p class="head">Extensible and customizable</p>
+              <p>
+                Want even more features? Install extensions to add new
+                languages, <br />
+                themes, debuggers, and to connect to additional services. <br />
+                Extensions run in separate processes, ensuring they won't slow
+                <br />
+                down you editor. Learn more about extensions.
+              </p>
+            </div>
+
+            <img src="img/Hundreds-of-Extensions.png" alt="" />
+          </div>
+        </div>
+
+        <div class="services__card">
+          <div class="services__card__item">
+            <img src="img/home-azure.svg" alt="" />
+            <div class="item__info">
+              <p class="head">Deploy with confidence and ease</p>
+              <p>
+                With Microsoft Azure you can deploy and host your React, <br />
+                Angular, Vue, Node, Python (and more!) sites, story and query
+                <br />
+                relational and document based data, and scale with serverless
+                <br />
+                computing, all with ease, all from within VS Code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vsCode">
+      <div class="container">
+        <h2>VS Code for</h2>
+
+        <div class="vsCode__wrapper">
+          <div class="vsCode__icons">
+            <div class="icons__item">
+              <img src="img/javascript.svg" alt="" />
+              <a href="#">Javascript</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/python.svg" alt="" />
+              <a href="#">Python</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/java.svg" alt="" />
+              <a href="#">Java</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/markdown.svg" alt="" />
+              <a href="#">Markdown</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/typescript.svg" alt="" />
+              <a href="#">Typescript</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/cpp.svg" alt="" />
+              <a href="#">C++</a>
+            </div>
+          </div>
+
+          <div class="vsCode__icons">
+            <div class="icons__item">
+              <img src="img/json.svg" alt="" />
+              <a href="#">JSON</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/powershell.svg" alt="" />
+              <a href="#">Powershell</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/html.svg" alt="" />
+              <a href="#">HTML/CSS</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/csharp.svg" alt="" />
+              <a href="#">C#</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/php.svg" alt="" />
+              <a href="#">PHP</a>
+            </div>
+
+            <div class="icons__item">
+              <img src="img/yaml.svg" alt="" />
+              <a href="#">YAML</a>
+            </div>
+          </div>
+
+          <a href="#">and many more language on the Marketplace ...</a>
+
+          <button>Get Started Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloads">
+      <div class="container__downloads">
+        <div class="downloads__wrapper">
+          <div class="downloads__cards" id="downloads__cards">
+            <div class="downloads__cards__items">
+              <div class="operatingS">
+                <img src="img/windows-logo.png" class="imahe" alt="" />
+                <button>
+                  <i class="fa-solid fa-download"></i>Windows <br /><small
+                    >Windows 8, 10, 11</small
+                  >
+                </button>
+              </div>
+
+              <div class="operatingS__bits">
+                <div class="items__downloads">
+                  <p>User Installer</p>
+                  <p class="box">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
+                </div>
+                <div class="items__downloads">
+                  <p>System Installer</p>
+                  <p class="box">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
                 </div>
 
-            </div>
-        </header>
-    </body>
+                <div class="items__downloads">
+                  <p>.zip</p>
+                  <p class="box">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
+                </div>
 
+                <div class="items__downloads">
+                  <p>CLI</p>
+                  <p class="box">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="downloads__cards__items">
+              <div class="operatingS">
+                <img src="img/linux-logo.png" class="imahe" alt="" />
+                <button>
+                  <i class="fa-solid fa-download"></i>Windows <br /><small
+                    >Windows 8, 10, 11</small
+                  >
+                </button>
+              </div>
+
+              <div class="operatingS__bits">
+                <div class="items__downloads" id="items__downloads__2">
+                  <p class="width">.deb</p>
+                  <p class="box same">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
+                </div>
+                <div class="items__downloads">
+                  <p class="width">.rpm</p>
+                  <p class="box same">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
+                </div>
+
+                <div class="items__downloads">
+                  <p class="width">.tar.gaz</p>
+                  <p class="box same">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
+                </div>
+
+                <div class="items__downloads">
+                  <p class="width">Snap</p>
+                  <p class="box same">Snap Store</p>
+                </div>
+
+                <div class="items__downloads">
+                  <p class="width">CLI</p>
+                  <p class="box same">x64</p>
+                  <p class="box">x86</p>
+                  <p class="box">Arm64</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="downloads__cards__items">
+              <div class="operatingS">
+                <img src="img/apple-logo.png" class="imahe" alt="" />
+                <button>
+                  <i class="fa-solid fa-download"></i>Windows <br /><small
+                    >Windows 8, 10, 11</small
+                  >
+                </button>
+              </div>
+
+              <div class="operatingS__bits">
+                <div class="items__downloads">
+                  <p class="width-2">.zip</p>
+                  <p class="box">Intel Chip</p>
+                  <p class="box">Apple silicon</p>
+                  <p class="box">Universal</p>
+                </div>
+                <div class="items__downloads">
+                  <p class="width-2">CLI</p>
+                  <p class="box">Intel Chip</p>
+                  <p class="box">Apple silicon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div class="footer__info">
+              <h2>
+                Want new feature <br />
+                sooner?
+              </h2>
+              <p>Get the <span>Insider Build</span> instead</p>
+            </div>
+
+            <div class="footer__info">
+              <h2>
+                Use <span>vscode.dev</span>for quick <br />
+                edits online!
+              </h2>
+              <p>Github, Azure Repos, and local files.</p>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <h3>LICENSE AND PRIVACY TERMS</h3>
+            <p>
+              By downloading and using Visual Studio Code, you agree to the
+              <span>license terms</span> and <span>privacy statement.</span> VS
+              Code <br />
+              automatically sends telemetry data and crash dumps to help us
+              improve the product. If you would prefer not to <br />
+              have this data sent please go see
+              <span>How to Disable Crash Reporting</span> to learn how to
+              disable it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  </body>
+
+  <script>
+   var slider = tns({
+  container: ".slider__wrapper",
+  items: 3, // Show 3 slides at a time
+  slideBy: "page",
+  autoplay: false,
+  autoplayButtonOutput: false,
+  controls: true, // Enable next & prev buttons
+  nav: true, // Enable dots below
+  controlsText: ["◀", "▶"], // Custom navigation buttons
+  responsive: {
+    1024: { items: 3 },
+    768: { items: 2 },
+    780: { items: 1 }
+  }
+});
+
+
+
+  </script>
 </html>

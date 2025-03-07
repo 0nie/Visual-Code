@@ -1,47 +1,123 @@
-.header{
-    padding: 5rem 0;
-    background-color: $clr-dark;
-    &__wrapper{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        justify-content: space-between;
+.header {
+    z-index: 9999;
+  position: fixed;
+  background-color: $clr-dark;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 59rem;
+  }
+  .branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    p {
+      color: $clr-light;
     }
-    .branding{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        p{
-            color: $clr-light;
-        }
-        img{
-            width: 5rem;
-        }
+    img {
+      width: 3.5rem;
     }
+  }
 
-    &__left{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5rem;
-    }
-    
-    &__options{
-        ul{
-            display: flex;
-            gap: 2rem;
-            li{
-                a{
-                    color: $clr-h-gray;
-                }
-            }
-        }
-    }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 1.8rem;
+  }
 
-    .header.container{
+  &__options {
+    ul {
+      display: flex;
+      gap: 2rem;
+      li {
+        transition: 0.3s ease;
+        a {
+          color: $clr-h-gray;
+        }
+        &:hover a {
+          color: $clr-light;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .header.container {
     width: 100%;
-    max-width: 300rem;
+    max-width: 350rem;
     margin: 0 auto;
     padding: 1.5rem;
-    }
+  }
 
+  .search__dloads {
+    position: relative;
+    form {
+      input,
+      button {
+        position: absolute;
+      }
+      input {
+        top: -3.26rem;
+        width: 24rem;
+        height: 6.5rem;
+        right: 12rem;
+        background-color: $clr-b-dark;
+        outline: none;
+        border: unset;
+        padding: 0 2rem;
+        border: 1px solid $transparent;
+        transition: 0.3s ease;
+        color: $clr-light;
+        &::placeholder {
+          font-size: 1.5rem;
+          color: $clr-light;
+        }
+        &:focus {
+          background-color: $clr-darkest;
+          transition: 0.3s ease;
+        }
+      }
+      button {
+        width: 13rem;
+        left: -11.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: $clr-b-blue;
+        border: none;
+        color: $clr-light;
+        outline: unset;
+        top: -3.3rem;
+        height: 6.5rem;
+        font-size: 1.5rem;
+        transition: 0.3s ease;
+        &:hover {
+          background-color: $clr-green;
+          color: $clr-light;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .updates {
+    width: 100%;
+    position: fixed;
+    top: 6.5rem;
+    color: $clr-light;
+    text-align: center;
+    background-color: $clr-f-dark !important;
+    padding: 1.8rem;
+    font-size: 1.7rem;
+    span {
+      color: $clr-d-blue;
+    }
+  }
 }
+
+// START OF ICON

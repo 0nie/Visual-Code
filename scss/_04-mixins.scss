@@ -104,6 +104,12 @@
   grid-gap: $gap;
 }
 
+@mixin flexItem ($content: flex-start, $items:flex-start){
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+}
+
 
 
 
